@@ -59,7 +59,7 @@
 <section>
 	<h2>History</h2>
 	
-	<p>Drupal started its life somewhere in 2000 as a custom Dutch online community / message board for a circle of friends, written by Dries Buytaert.</p>
+	<p>Drupal started its life in 2000 as a custom Dutch message board for a circle of friends, written by Dries Buytaert.</p>
 	
 	<ol>
 	<li>Dorp.org</li>
@@ -68,14 +68,14 @@
 	<li>Drupal.org</li>
 	</ol>
 	
-	<p>The code was released as Drupal 1.0 15th January 20012.</p>
+	<p>The code was released as Drupal 1.0 15th January 2001.</p>
 
 </section>
 
 <section>
 
-	<img src="http://p.twimg.com/A0vHzMnCcAAyeDX.jpg" align="right" width="300">
 	<h2>Drupal is a Content<br>Management Framework</h2>
+	<img src="http://p.twimg.com/A0vHzMnCcAAyeDX.jpg" align="rigsht" width="200">
 		
 	<blockquote style="clear: both;">
 		<p>Drupal is like a Lego kit. Skilled developers have already made the building blocks - in the form of contributed modules - that you need to create a site that suits your needs[...]</p>
@@ -91,7 +91,7 @@
 		<h1>Drupal development</h1>
 		
 		<ul>
-		<li>Core vs Contrib</li>
+		<li>The eternal battle of Core vs Contrib</li>
 		<li>Backward compatibility for data, not code (<a href="https://twitter.com/drupal8changes">proof</a>)</li>
 		<li>Has traditionally been a <a href="http://www.communitywiki.org/DoOcracy">Do-ocracy</a></li>
 		</ul>
@@ -106,24 +106,20 @@
 		<h2>Some numbers</h2>
 		
 		<ul>
-		<li>22,177 Modules</li>
+		<li>22,195 Modules</li>
 		<li>1,745 Themes</li>
 		<li>640 Distributions</li>
-		<li>26,928 Developers</li>
+		<li>26,974 Developers</li>
 		</ul>
 		
-		<br><br><h2>This week</h2>
+		<br><br><h2>Last 7 days</h2>
 		
 		<ul>
-		<li>2,925 Code commits</li>
-		<li>5,664 Issue comments</li>
+		<li>2,614 Code commits</li>
+		<li>5,654 Issue comments</li>
 		</ul>
 		
 	</section>
-</section>
-
-<section>
-	<img src="https://drupal.org/files/drupal_flow_0.gif" alt="Drupal architecture" title="" />
 </section>
 
 <section>
@@ -142,6 +138,11 @@
 		</ul>
 
 	</section>
+
+	<section>
+		<img src="https://drupal.org/files/drupal_flow_0.gif" alt="Drupal architecture" title="" />
+	</section>
+
 	<section>
 		
 		<h2>3rd party greatest hits</h2>
@@ -158,9 +159,9 @@
 	<h2>Drupal 7 changes</h2>
 
 	<ul>
-	<li>Do not break reverse proxies :)</li>
 	<li>Fieldable entities (nodes, users, taxonomy)</li>
 	<li>Entity, bundles, fields</li>
+	<li>Do not break reverse proxies :)</li>
 	<li>Better administration UI</li>
 	<li>Database abstraction layer</li>
 	</ul>
@@ -177,15 +178,17 @@
 		<li>Finally truly OO</li>
 		<li>PHPUnit</li>
 		<li>Doctrine</li>
+
+		<li>Components from Symfony 2</li>
 		<li>Fully reverse proxy compatible (w/fragments)</li>
-		<li>Components from Symfony 2 Framework</li>
-		<li>Comments on any entity (Inception)</li>
-		<li>Views in core</li>
-		<li>Twig templating language</li>
-		<li>WYSIWYG (10 years ago called...)</li>
-		<li>CMI (UUID, config files, etc)</li>
 		<li>Scotch initiative</li>
 		<li>Backbone.js (MVC in JS)</li>
+		<li>Twig templating language</li>
+
+		<li>Comments on any entity (Inception)</li>
+		<li>Views in core</li>
+		<li>WYSIWYG (10 years ago called...)</li>
+		<li>Configuration Management (UUID, config files, etc)</li>
 		</ul>
 	</section>
 
@@ -202,29 +205,33 @@
 	</section>
 
 	<section>
-			<h2>Web Services and Context core Initiative<br>(WSCI = Whisky)</h2>
+			<h2>Web Services and Context core Initiative (WSCCI)</h2>
+			<p>Routing based on:</p>
 			<ul>
-			<li>path</li>
+			<li>Request path</li>
 			<li>HTTP method</li>
 			<li>SSL</li>
 			<li>Mime-headers</li>
 			<li>Pluggable filters</li>
-			<li>Can serialize for you to JSON and XML</li>
 			</ul>
+			<br><br>
+			<p>Can serialize for you to JSON and XML</p>
 	</section>
 	
 	<section>
 			<h2>rest.module in core</h2>
 			<ul>
+			<li>Can expose all entities</li>
 			<li>GET, POST, PATCH, DELETE</li>
 			<li>Can even expose views as a collection!</li>
-			<li>JSON, XML and HAL (specific JSON)</li>
+			<li>Returns JSON, XML and HAL (specific JSON)</li>
 			</ul>
 	</section>
 
 </section>
 <section>
 	<h1>The End</h1>
+	<img src="http://farm3.static.flickr.com/2127/2329243533_af145c983b.jpg">
 	<p>Presentation at <a href="https://github.com/fuzzy76/d6-to-d8-revealjs">https://github.com/fuzzy76/d6-to-d8-revealjs</a></p>
 </section>
 
@@ -246,8 +253,8 @@
 				history: true,
 				center: true,
 				margin: 0,
-				width: 1024,
-				height: 768,
+				width: 1280,
+				height: 1024,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
