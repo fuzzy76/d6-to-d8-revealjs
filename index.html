@@ -22,7 +22,7 @@
 
 <style>
 .reveal section img { border: none; }
-.reveal ol, .reveal ul { margin-bottom: 10px}
+.reveal p, .reveal ol, .reveal ul { margin-bottom: 1em}
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 { -webkit-hyphens: manual;}
 </style>
 
@@ -59,15 +59,9 @@
 <section>
 	<h2>History</h2>
 	
+	<img src="http://www.gnulinuxpy.org/wp-content/uploads/2011/07/Dries-Buytaert.jpg" align="right">
 	<p>Drupal started its life in 2000 as a custom Dutch message board for a circle of friends, written by Dries Buytaert.</p>
-	
-	<ol>
-	<li>Dorp.org</li>
-	<li>Drop.org</li>
-	<li>(Druppel)</li>
-	<li>Drupal.org</li>
-	</ol>
-	
+	<p>Dorp.org => Drop.org => (Druppel) => Drupal.org</p>
 	<p>The code was released as Drupal 1.0 15th January 2001.</p>
 
 </section>
@@ -91,9 +85,9 @@
 		<h1>Drupal development</h1>
 		
 		<ul>
-		<li>The eternal battle of Core vs Contrib</li>
-		<li>Backward compatibility for data, not code (<a href="https://twitter.com/drupal8changes">proof</a>)</li>
-		<li>Has traditionally been a <a href="http://www.communitywiki.org/DoOcracy">Do-ocracy</a></li>
+		<li class="fragment">The eternal battle of Core vs Contrib</li>
+		<li class="fragment">Backward compatibility for data, not code (<a href="https://twitter.com/drupal8changes">proof</a>)</li>
+		<li class="fragment">Has traditionally been a <a href="http://www.communitywiki.org/DoOcracy">Do-ocracy</a></li>
 		</ul>
 	
 		<blockquote class="fragment">
@@ -124,19 +118,25 @@
 
 <section>
 	<section>
-		<h2>Drupal 6 features</h2>
-		
+		<h2>Drupal 6 content</h2>
+		<img src="http://www.ibm.com/developerworks/library/os-drupal1/node.gif" align="right">
 		<ul>
 		<li>Nodes (content types)</li>
+		<li>Taxonomy</li>
+		<li>Revisions</li>
 		<li>Comments</li>
 		<li>Custom URLs</li>
-		<li>Revisions</li>
-		<li>Taxonomy</li>
+		</ul>
+	
+	</section>
+	<section>
+		<h2>Drupal 6 other features</h2>
+		<ul>
 		<li>User management (roles, permissions)</li>
 		<li>Regions and blocks</li>
 		<li>Menus</li>
 		</ul>
-
+	
 	</section>
 
 	<section>
@@ -152,6 +152,24 @@
 		<li>Views</li>
 		<li>WYSIWYG</li>
 		</ul>
+		<div>
+		<img src="http://stdout.be/images/content/2010-04-22-drupal-cck.png" align="left" style="width:45%;">
+		<img src="http://www.urbanriver.com/wp-content/uploads/2013/01/blog_drupal_view.png" align="right" style="width:45%;">
+	</div>
+	</section>
+</section>
+<section>
+	<section>
+		<h2>Advanced concepts - multisite</h2>
+	<img src="http://palantir.net/sites/default/files/general/images/multisite.png">
+	</section>
+	<section>
+		<h2>Advanced concepts - Drush</h2>
+		<img src="http://dwit566.files.wordpress.com/2011/03/dr.jpg">
+	</section>
+	<section>
+		<h2>Advanced concepts - Aegir</h2>
+		<img src="http://upload.wikimedia.org/wikipedia/en/9/9c/Aegir_screenshot.png">
 	</section>
 </section>
 
@@ -193,19 +211,19 @@
 	</section>
 
 	<section>
-		<h2>Full responsive mobile interface</h2>
+		<h2>D8 - Full responsive mobile interface</h2>
 		<img src="https://drupal.org/files/drupal-drupal-7-toolbar-on-iphone.png" alt="Old" title="" align="left" />
 		<img src="http://cdn2.drupalwatchdog.com/sites/drupalwatchdog.com/files/images/web/screenshots-sidebyside.png" alt="New" title="" align="right" />
 	</section>
 
   <section>	
-		<h2>Internationalization improved</h2>
+		<h2>D8 - Internationalization improved</h2>
 		<img src="http://hojtsy.hu/files/Drupal8InstallLanguage.png" alt="Installer language selector" title="" align="left" style="width: 45%;" />
 		<img src="http://hojtsy.hu/files/Drupal8InstallerRTL.png" alt="Installer language selected" title="" align="right" style="width: 45%;" />
 	</section>
 
 	<section>
-			<h2>Web Services and Context core Initiative (WSCCI)</h2>
+			<h2>D8 - Web Services and Context core Initiative (WSCCI)</h2>
 			<p>Routing based on:</p>
 			<ul>
 			<li>Request path</li>
@@ -219,7 +237,7 @@
 	</section>
 	
 	<section>
-			<h2>rest.module in core</h2>
+			<h2>D8 - rest.module in core</h2>
 			<ul>
 			<li>Can expose all entities</li>
 			<li>GET, POST, PATCH, DELETE</li>
